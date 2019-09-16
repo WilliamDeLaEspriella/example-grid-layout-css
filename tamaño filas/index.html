@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Funciones</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(4, 200px);
+            grid-gap: 5px;
+            height: 100vh;
+        }
+
+        .item {
+            background: lightblue;
+            padding: 10px;
+            border: 1px solid red;
+            /*margin-right: 10px;*/
+            /*margin-bottom: 10px;*/
+        }
+
+        .item:nth-of-type(1) {
+            /* background: blue;
+            overflow: auto; */
+            grid-column: 1 / span 3;
+            grid-row: 1 / -1;
+        }
+
+        .item:nth-of-type(2) {
+            /* background: darkred;
+            overflow: auto;*/
+            grid-column: 4 / span 2; 
+            grid-row: 1 / -1;
+        }
+        .item:nth-of-type(3) {
+            /* background: darkgoldenrod;
+            overflow: auto;*/
+            grid-column: 6 / span 2; 
+        }
+
+        .item:nth-of-type(4) {
+            /* background: darkgoldenrod;
+            overflow: auto;*/
+            grid-row: 2 / -1;
+        }
+        
+        .item:nth-of-type(5) {
+            /* background: darkgoldenrod;
+            overflow: auto;*/
+            grid-row: 2 / -1;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+
+
+    </section>
+</body>
+
+</html>
